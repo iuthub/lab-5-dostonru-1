@@ -14,26 +14,38 @@
 		
 		<hr />
 		
+		<form method="post" action="sucker.php">
 		<h2>Give Us Your Money</h2>
 		<dl>
 			<dt>Name</dt>
 			<dd>
-				???
+				<input type="text" name="username" value="Myname"> 
 			</dd>
 			
 			<dt>Section</dt>
 			<dd>
-				???
+				<label for="degree">Select degree</label>
+				<select id="degree" name="degree">
+					<option value="MA">MA</option>
+					<option value="MF">MF</option>
+
+				</select>
 			</dd>
+			
 			
 			<dt>Credit Card</dt>
 			<dd>
-				???
+				<input type="text" name="cardnumber" value="1111 2222 3333 4444">
+				
+				<input type="radio" name="card" value="Visa">Visa
+				<input type="radio" name="card" value="MasterCard">MasterCard
 			</dd>
 		</dl>
 		
 		<div>
-			I am a giant sucker.
+			<input type="submit" value="I am a giant sucker.">
+
+			
 		</div>
 	</body>
 </html>
